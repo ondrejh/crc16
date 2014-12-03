@@ -61,9 +61,10 @@ int main(int argc, char *argv[])
     else
     {
         // no params - print usage
-        printf("\nCRC16 test programm\n\n  Params:\n\n    -c .. check crc\n    -d [d0 d1 .. dN] .. data\n");
-        printf("\n  Usage:\n\n    Add CRC to data polynom:\n      crc -d 78 9A BC\n\n");
-        printf("    Test CRC in data polynom:\n      crc -c -d 12 34 EC BB\n\n");
+        printf("\nCRC16 test programm\n\n  Params:\n\n    -c .. check crc\n    -pXXXX .. polynomial\n    -d [d0 d1 .. dN] .. data\n");
+        printf("\n  Usage:\n\n    Add CRC to data:\n      crc -d 78 9A BC\n\n");
+        printf("    Test CRC in data:\n      crc -c -d 12 34 EC BB\n\n");
+        printf("    Test CRC with polynomial 0x1021 in data:\n      crc -c -p1021 -d 12 34 EC BB\n\n");
         return(0);
     }
 
