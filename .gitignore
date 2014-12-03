@@ -1,1 +1,3 @@
 C/*.o
+C_modbus/*.layout
+C_modbus/*.o
