@@ -17,7 +17,7 @@
 #define MAX_DLEN 128
 
 // test crc generative polynom (default)
-#define CRC_POL 0x8005
+#define CRC_POL 0x1021
 
 int main(int argc, char *argv[])
 {
